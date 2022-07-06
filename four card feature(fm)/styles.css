@@ -1,0 +1,119 @@
+*{
+    font-family:'Poppins';
+    
+}
+:root{
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --orange: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --dark-blue: hsl(234, 12%, 34%);
+    --gray-blue: hsl(229, 6%, 66%);
+    --light-gray: hsl(0, 0%, 98%);
+
+}
+/* dealing with fonts */
+.intro h1{
+    font-weight: 200;
+    color: var(--dark-blue);
+    font-size:19px;
+    text-align: center;
+    margin:0;
+    padding:none;
+}
+.intro h2{
+    font-weight:600;
+    color: var(--dark-blue);
+    text-align: center;
+    margin:0;
+    padding:none;
+    font-size:19px;
+}
+.intro p{
+    font-weight:400;
+    color: var(--gray-blue);
+    margin-top:0.5rem;
+    text-align:center;
+    margin-left:1rem;
+    margin-right:1rem;
+
+}
+.cards h3{
+    font-weight:600;
+    color: var(--dark-blue);
+    margin:0;
+
+}
+.cards p{
+    font-weight:400;
+    font-size: 15px;
+    color: var(--gray-blue);
+    margin:0;
+}
+/* designing the cards */
+.cards{
+    border-radius:0.3rem;
+    box-shadow:0 0.5rem 0.7rem 0.1rem var(--gray-blue);
+    margin:1rem;
+    padding-bottom:2rem;
+}
+.cards h3{
+    margin-left:1rem;
+}
+.cards p{
+    margin-left:1rem;
+    text-align:left;
+    font-size:15px;
+}
+.cards img{
+    margin-left:75%;
+    margin-top:1rem;
+}
+#supervisor{
+    border-top: 4px solid var(--cyan);
+}
+#team-builder{
+    border-top: 4px solid var(--red);
+}
+#karma{
+    border-top: 4px solid var(--orange);
+}
+#calculator{
+    border-top: 4px solid var(--blue);
+}
+
+@media screen and (min-width:376px) {
+    .card-container{
+       display:flex;
+       align-items:center;
+       justify-content: center;
+    }
+    .column-one{
+        align-self:center;
+    }        
+    .column-three{
+        align-self:center;
+    }
+    .cards{
+        /* align-self:flex-start; */
+        width:20rem;
+    }
+    .cards p{
+        margin-right:1.5rem;
+        text-align: left;
+    }
+    #karma{
+        width:20rem;
+    }
+    #supervisor{
+        width:20rem;
+        /* align-self: flex-end; */
+    }
+    #team-builder{
+        width:20rem;
+    }
+    #calculator{
+        width:20rem;
+    }
+ 
+}
